@@ -4,7 +4,7 @@
   var nome = prompt("Informe o seu nome");
   var alturaInformada = prompt("Informe sua altura");
   var pesoInformado = prompt("Informe seu peso");
-  var imc = calculaImc(alturaInformada, pesoInformado);
+  var imc =  Math.round(calculaImc(alturaInformada, pesoInformado)*100)/100;
   
   function pulaLinha() {
     document.write("<br><hr><br>");
