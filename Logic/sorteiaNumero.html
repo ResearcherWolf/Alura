@@ -1,8 +1,9 @@
 <meta charset="UTF-8">
 
 <script>
-  var numeroPensado = sorteia(100);
-  var chute = parseInt(prompt("Manda a braba aí"));
+  var maximo = 10;
+  var numeroPensado = sorteia(maximo);
+  var chute = parseInt(prompt("Coloque um número de 0 a " + maximo));
   var resposta = "a";
   
   function pulaLinha() {
@@ -17,13 +18,13 @@
   }
   
   if (chute == numeroPensado) {
-    escrever ("Congratulatons, " + numeroPensado + " era a resposta certa");
+    escrever ("Parabéns, " + numeroPensado + " era a resposta certa");
   } else {
     if (chute > numeroPensado){
       resposta = "maior que";
     } else{
       resposta = "menor que";
     }
-    escrever ("Failade, seu chute foi " + resposta + " que o sorteado");
+    escrever ("Não dessa vez, seu chute foi " + resposta + " que o sorteado");
   }
 </script>
