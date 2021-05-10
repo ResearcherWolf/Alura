@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+  var numeroPensado = sorteia(100):
+  var chute = parseInt(prompt("Manda a braba aí"));
+  var resposta = a;
+  
+  function pulaLinha() {
+    document.write("<br><hr><br>");
+  } 
+  function escrever(mensagem) {
+    document.write("<big>" + mensagem + "</big>");
+    pulaLinha();
+  }
+  function sorteia(n){
+    return Math.round(Math.random() * n);
+  }
+  
+  if (chute == numeroPensado) {
+    escrever ("Congratulatons, " + numeroPensado + " era a resposta certa");
+  } else {
+    if (chute > numeroPensado){
+      resposta = maior que;
+    else{
+      resposta = menor que;
+    }
+    escrever ("Failade, seu chute foi " + resposta + " que o sorteado");
+  }
+</script>
