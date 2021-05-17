@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 
 <script>
-  var numero = 30;
+  var numero = 20;
   
   function pulaLinha() {
     document.write("<br><hr><br>");
@@ -10,15 +10,12 @@
     document.write("<big>" + mensagem + "</big>");
   }
 
-  while(numero <= 40){
-    if(numero != 33 && numero != 37 && numero != 40){
-      escrever(numero + ", ");
-    }
-    if(numero == 40){
+  while(numero >= 0){
+    if(numero != 0){
+      escrever(numero + " ,");
+    } else{
       escrever(numero + ".");
     }
-    numero = numero + 1;
-  }
-  pulaLinha();  
-  escrever("fim");
+    numero = numero - 1;
+  }    
 </script>
