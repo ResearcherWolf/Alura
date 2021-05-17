@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<script>
+  var par = 0;
+  
+  function pulaLinha() {
+    document.write("<br><hr><br>");
+  } 
+  function escrever(mensagem) {
+    document.write("<big>" + mensagem + "</big>");
+    pulaLinha();
+  }
+
+  while(par <= 100){
+    escrever(par + ", ");
+    par = par + 2;
+  }
+  pulaLinha();
+  escrever("fim");
+</script>
