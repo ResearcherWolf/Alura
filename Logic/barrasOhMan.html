@@ -12,7 +12,8 @@
   pincel.fillStyle = 'lightgray';
   pincel.fillRect(0, 0, 600, 400);
 
-  function desenhaBarra(x, y, ano, ano2) {	
+  function desenhaBarra(x, y, ano, ano2) {
+		pincel.font = '12px Times New Roman';
 		pincel.fillStyle = 'black';
 		pincel.fillText(ano2, x, (y + 12));
 		for(var nuss = 0; nuss < 4; nuss++){
@@ -22,8 +23,7 @@
 			}
 		
 			pincel.fillStyle = cores[nuss];
-    	pincel.fillRect(x, y + (100 - altura), 50, altura);
-			pincel.font = '12px Times New Roman';
+    	pincel.fillRect(x, (y + (100 - altura)), 50, altura);
 		}
   }
   
