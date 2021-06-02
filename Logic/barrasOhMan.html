@@ -15,8 +15,8 @@
   function desenhaBarra(x, y, ano, ano2) {
 		pincel.font = '12px Times New Roman';
 		pincel.fillStyle = 'black';
-		pincel.fillText(ano2, x, (y + 12));
-		for(var nuss = 0; nuss < 4; nuss++){
+		pincel.fillText(ano2, x, (y - 12));
+		for(var nuss = 0; nuss < ano.length; nuss++){
 			var altura = 0;
 			for(nuss; nuss < ano.length; nuss++){
 				altura = altura + ano[nuss];
