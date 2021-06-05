@@ -18,11 +18,11 @@
 		pincel.fillText(ano2, x, (y - 12));
 		var altura = 0;
 		for(var nuss = 0; nuss < ano.length; nuss++){
-			for(nuss; nuss < ano.length; nuss++){
-				altura = altura + ano[nuss];
+			for(var nusse; nusse < ano.length; nusse++){
+				altura = altura + ano[nusse];
 			}
 		pincel.fillStyle = cor[nuss];
-		document.write(cor[nuss]);
+		document.write(cor[nuss] + <br>);
 		pincel.fillRect(x, (y + (100 - altura)), 50, altura);
 		pincel.strokeStyle = 'white';
 		pincel.strokeRect(x, (y + (100 - altura)), 50, altura);
