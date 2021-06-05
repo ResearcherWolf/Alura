@@ -16,16 +16,15 @@
 		pincel.font = '12px Times New Roman';
 		pincel.fillStyle = 'black';
 		pincel.fillText(ano2, x, (y - 12));
+		var altura = 0;
 		for(var nuss = 0; nuss < ano.length; nuss++){
-			var altura = 0;
 			for(nuss; nuss < ano.length; nuss++){
 				altura = altura + ano[nuss];
 			}
-		
-			pincel.fillStyle = cores[nuss];
-    	pincel.fillRect(x, (y + (100 - altura)), 50, altura);
-			pincel.strokeStyle = 'white';
-    	pincel.strokeRect(x, (y + (100 - altura)), 50, altura);
+		pincel.fillStyle = cores[nuss];
+		pincel.fillRect(x, (y + (100 - altura)), 50, altura);
+		pincel.strokeStyle = 'white';
+		pincel.strokeRect(x, (y + (100 - altura)), 50, altura);
 		}
   }
   
