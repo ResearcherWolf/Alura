@@ -5,14 +5,15 @@
 <script>
   var tela = document.querySelector('canvas');
   var pincel = tela.getContext('2d');
-  var serie2015 = [50, 25, 20, 5];
-  var serie2016 = [65, 20, 13, 2];
-  var cores = ['blue', 'green', 'yellow', 'red'];
   
   pincel.fillStyle = 'lightgray';
   pincel.fillRect(0, 0, 600, 400);
 
   function desenhaBarra(x, y, ano, ano2) {
+  	var serie2015 = [50, 25, 20, 5];
+  	var serie2016 = [65, 20, 13, 2];
+  	var cores = ['blue', 'green', 'yellow', 'red'];
+		
 		pincel.font = '12px Times New Roman';
 		pincel.fillStyle = 'black';
 		pincel.fillText(ano2, x, (y - 12));
