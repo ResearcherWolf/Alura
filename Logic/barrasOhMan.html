@@ -18,7 +18,7 @@
 		pincel.fillText(ano2, x, (y - 12));
 			for(var nuss = 0; nuss < ano.length; nuss++){
 				var altura = 0;
-				for(var nusse = 0; nusse < ano.length; nusse++){
+				for(var nusse = nuss; nusse < ano.length; nusse++){
 					altura = altura + ano[nusse];
 				}
 				pincel.fillStyle = cores[nuss];
