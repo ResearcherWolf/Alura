@@ -20,9 +20,9 @@
 		for(var nuss = 0; nuss < ano.length; nuss++){
 			for(var nusse; nusse < ano.length; nusse++){
 				altura = altura + ano[nusse];
+        document.write(altura + "<br>");
 			}
 		pincel.fillStyle = cores[nuss];
-		document.write(altura + "<br>");
 		pincel.fillRect(x, (y + (100 - altura)), 50, altura);
 		pincel.strokeStyle = 'white';
 		pincel.strokeRect(x, (y + (100 - altura)), 50, altura);
