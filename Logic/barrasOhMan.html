@@ -16,17 +16,18 @@
 		pincel.font = '12px Times New Roman';
 		pincel.fillStyle = 'black';
 		pincel.fillText(ano2, x, (y - 12));
-		var altura = 0;
-		for(var nuss = 0; nuss < ano.length; nuss++){
-			for(var nusse = 0; nusse < ano.length; nusse++){
-				altura = altura + ano[nusse];
+			for(var nuss = 0; nuss < ano.length; nuss++){
+				var altura = 0;
+				for(var nusse = 0; nusse < ano.length; nusse++){
+					altura = altura + ano[nusse];
+				}
+				pincel.fillStyle = cores[nuss];
+				document.write(altura + "<br>");
+				pincel.fillRect(x, (y + (100 - altura)), 50, altura);
+				document.write(altura + "<br>");
+				pincel.strokeStyle = 'white';
+				pincel.strokeRect(x, (y + (100 - altura)), 50, altura);
 			}
-		pincel.fillStyle = cores[nuss];
-		document.write(altura + "<br>");
-		pincel.fillRect(x, (y + (100 - altura)), 50, altura);
-		pincel.strokeStyle = 'white';
-		pincel.strokeRect(x, (y + (100 - altura)), 50, altura);
-		}
   }
   
   desenhaBarra(50, 50, serie2015, '2015');
