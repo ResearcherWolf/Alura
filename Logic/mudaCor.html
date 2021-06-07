@@ -13,9 +13,13 @@
 	
 	function mudaCor() {
 		cor++;
-		if(cor => 3){cor = 0}
+		if(cor => 3){
+			cor = 0;
+		}
 		return false;
-  }
+  }   
+	
+	tela.oncontextmenu = mudaCor;
 	
 	function imprimeMouse(mouseEvent){
 		var x = mouseEvent.pageX - tela.offsetLeft;
@@ -28,6 +32,5 @@
 		console.log(cor);
   }
 
-  tela.onclick = imprimeMouse	;   
-	tela.oncontextmenu = mudaCor;
+  tela.onclick = imprimeMouse;
 </script>
