@@ -11,9 +11,7 @@
   pincel.fillStyle = 'lightgray';
   pincel.fillRect(0, 0, 600, 400);
 	
-	
-
-  function mudaCor() {
+	function mudaCor() {
 		cor++;
 		if(cor => cores.length){cor = 0}
 		return false;
@@ -28,6 +26,7 @@
 		pincel.arc(x, y, 10, 0, 2*3.14);
 		pincel.fill();
 		console.log(x + ',' + y);
+		console.log(cor);
   }
 
   tela.onclick = imprimeMouse	;   
