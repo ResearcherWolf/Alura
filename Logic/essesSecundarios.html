@@ -26,6 +26,18 @@
   }
   function atualizaTela(){
     limpaTela();
+    if(x > 590){
+      x = 590;
+    }
+    if(x < 10){
+      x = 10;
+    }
+    if(y > 390){
+      y = 390;
+    }
+    if(y < 10){
+      y = 10;
+    }
     desenhaCirculo(x, y, 10);
   }
   function leTeclado(batata){
