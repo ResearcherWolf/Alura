@@ -6,6 +6,7 @@
 	var tela = document.querySelector('canvas');
 	var pincel = tela.getContext('2d');
 	var x = 20;
+	var con = 0;
 	
 	pincel.fillStyle = 'lightgray';
 	pincel.fillRect(0, 0, 600, 400);
@@ -25,14 +26,16 @@
 	function atualizaPagina(){
 		limpaTela();
 		desenhaCirculo(x, 20, 10);
-		if(x < 600){
-			x++;
-		}else{
-			while(x > 20){
-				limpaTela();
-				desenhaCirculo(x, 20, 10);
-				x = x - 1;
+		if(x > 600){
+			con = 1;
+		}
+		if(con == 1){
+			x = x - 1
+			if(x <= 20){
+				con = 0;
 			}
+		} else{
+			x++
 		}
 	}
 	
