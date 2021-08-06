@@ -28,7 +28,6 @@
     limpaTela();
     desenhaCirculo(x, y, 10);
   }
-  
   function leTeclado(batata){
     seta = batata.keyCode;
     if(seta == cima){
@@ -42,8 +41,8 @@
     }
     if(seta == direita){
       x = x + taxa;
+    }
   }
-  
-  document.onkeydown = leTeclado;
   setInterval(atualizaTela, 20);
+  document.onkeydown = leTeclado;
 </script>
