@@ -32,11 +32,24 @@
 	function desabilitaDesenhar() {
 		desenha = false;
 	}
+    function trocaCor(ye){
+        var xe = evento.pageX - tela.offsetLeft;
+		var ye = evento.pageY - tela.offsetTop;
+        if(ye < tamanhoQuadrados){
+            if(xe < tamanhoQuadrados){
+                corAtual = 'vermelho';
+            }
+            if((xe > tamanhoQuadrados)&&(xe < tamanhoQuadrados*2)){
+                corAtual = 'verde';
+            }
+            if((xe > tamanhoQuadrados*2)&&(xe < tamanhoQuadrados*3)){
+                corAtual = 'azul';
+            }
+        }
+    }
 	
 	var tela = document.querySelector('canvas');
 	var pincel = tela.getContext('2d');
-        pincel.fillStyle = 'lightgray';
-	pincel.fillRect(0, 0, 600, 400);
 	var desenha = false;
 	var corAtual = 'blue';
 	var xVermelho = 0;
@@ -45,7 +58,10 @@
 	var yQuadrados = 0;
 	var tamanhoQuadrados = 50;
 	
+    pincel.fillStyle = 'lightgray';
+	pincel.fillRect(0, 0, 600, 400);
 	desenhaPaletaDeCores(); // mostra os quadrados de seleção de cores
+    tela.onclick = trocaCor();
 	tela.onmousemove = lidaComMovimentoDoMouse;
 	tela.onmousedown = habilitaDesenhar;
 	tela.onmouseup = desabilitaDesenhar;
