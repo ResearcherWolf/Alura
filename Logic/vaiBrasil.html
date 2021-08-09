@@ -5,7 +5,7 @@
 <canvas width="600" height="400"></canvas>
 
 <script>
-  var con = 1;
+  var con = true;
 
 function desenhaBandeiraBrasil() {
     var tela = document.querySelector('canvas');
@@ -49,12 +49,12 @@ function desenhaBandeiraAlemanha() {
     pincel.fillRect(0, 266, 600, 133);
 }
   function trocaBandeira(){
-    if(con == 1){
+    if(con){
       desenhaBandeiraBrasil();
-      con = con - 1;
-    }else if(con == 0){
+      con = !con;
+    }else{
       desenhaBandeiraAlemanha()
-      con = con + 1;
+      con = !con;
     }
   }
   
