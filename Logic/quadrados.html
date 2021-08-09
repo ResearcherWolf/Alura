@@ -32,7 +32,7 @@
 	function desabilitaDesenhar() {
 		desenha = false;
 	}
-    function trocaCor(ye){
+    function trocaCor(evento){
         var xe = evento.pageX - tela.offsetLeft;
 		var ye = evento.pageY - tela.offsetTop;
         if(ye < tamanhoQuadrados){
@@ -61,7 +61,7 @@
     pincel.fillStyle = 'lightgray';
 	pincel.fillRect(0, 0, 600, 400);
 	desenhaPaletaDeCores(); // mostra os quadrados de seleção de cores
-    tela.onclick = trocaCor();
+    tela.onclick = trocaCor;
 	tela.onmousemove = lidaComMovimentoDoMouse;
 	tela.onmousedown = habilitaDesenhar;
 	tela.onmouseup = desabilitaDesenhar;
