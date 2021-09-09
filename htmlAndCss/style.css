@@ -3,7 +3,7 @@ body{
 }
 
 header{
-  background: #BBBBBB;
+  background: #000000;
   padding: 20px 0;
 }
 
@@ -163,13 +163,9 @@ footer{
   clear: left;
 }
 
-.titulo-principal:first-letter{
-  font-weight: bold;
-}
-
 .principal {
   padding: 3em 0;
-  background: #FEFEFE;
+  background: #150202e0;
   width: 940px;
   margin: 0 auto;
 }
@@ -188,7 +184,7 @@ footer{
 
 .mapa{
   padding: 3em 0;
-  background: linear-gradient(#FEFEFE, #888888);
+  background: linear-gradient(#150202e0, #000000);
 }
 
 .mapa-conteudo{
@@ -203,7 +199,7 @@ footer{
 
 .beneficios{
   padding: 3em 0;
-  background: #888888;
+  background: #000000;
 }
 
 .conteudo-beneficios{
