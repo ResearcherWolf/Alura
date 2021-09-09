@@ -174,6 +174,10 @@ footer{
   margin: 0 auto;
 }
 
+.principal p{
+  margin: 0 0 1em;
+}
+
 .principal strong{
   font-weight: bold;
 }
@@ -237,7 +241,7 @@ footer{
 }
 
 .utensilios{
-  width: calc(40% - 26px);
+  width: 120px;
   float: left;
   margin: 0 20px 20px 0;
 }
