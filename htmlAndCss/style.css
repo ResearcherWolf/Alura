@@ -41,6 +41,14 @@ nav a:hover{
 main{
 }
 
+p{
+  color: white;
+}
+
+.formularios{
+  margin: auto;
+}
+
 form{
   margin: 40px 0;
 }
@@ -96,6 +104,7 @@ form label, form legend{
   box-sizing: border-box;
   border: 2px solid #000000;
   border-radius: 10px;
+  transition: 200ms;
 }
 
 .produtos li:hover{
@@ -113,6 +122,7 @@ form label, form legend{
 .produtos h2{
   font-size: 30px;
   font-weight: bold;
+  color: white;
 }
 
 .produto-descricao{
