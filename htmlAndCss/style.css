@@ -1,5 +1,6 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  background: #150202e0;
 }
 
 header{
@@ -26,7 +27,7 @@ nav li{
 
 nav a{
   text-transform: uppercase;
-  color: #000000;
+  color: #FFFFFF;
   font-weight: bold;
   font-size: 22px;
   text-decoration: none;
@@ -215,6 +216,7 @@ footer{
 
 .itens{
   line-height: 1.5;
+  color: #FFFFFF;
 }
 
 .itens:first-child{
