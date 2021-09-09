@@ -26,16 +26,16 @@
       <section class="formularios">
         <form>
           <label for="nomesobrenome" class="input-padrao">Nome e sobrenome</label>
-          <input type="text" id="nomesobrenome" required>
+          <input type="text" id="nomesobrenome" class="input-centralizada" required>
 
           <label for="email" class="input-padrao">Email</label>
-          <input type="email" id="email" required placeholder="nome@dominio.com">
+          <input type="email" id="email" class="input-centralizada" required placeholder="nome@dominio.com">
 
           <label for="telefone" class="input-padrao">Telefone</label>
-          <input type="tel" id="telefone" required placeholder="(XX) XXXXX-XXXX">
+          <input type="tel" id="telefone" class="input-centralizada" required placeholder="(XX) XXXXX-XXXX">
 
-          <label for="mensagem">Mensagem</label>
-          <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+          <label for="mensagem" class="input-padrao">Mensagem</label>
+          <textarea cols="70" rows="10" id="mensagem" class="input-centralizada" required></textarea>
 
           <fieldset>
             <legend>Como prefere o nosso contato?</legend>
@@ -56,7 +56,7 @@
           </fieldset>
           <fieldset>
             <legend>Qual horário prefere ser atendido?</legend>
-            <select>
+            <select class="input-centralizada">
               <option>Manhã</option>
               <option>Tarde</option>
               <option>Noite</option>
@@ -69,7 +69,7 @@
 
           <input type="submit" value="Enviar formulário" class="enviar">
         </form>
-        <table>
+        <table style="margin: auto">
           <thead>
             <tr>
               <th colspan="2">Tabela de horários</th>
