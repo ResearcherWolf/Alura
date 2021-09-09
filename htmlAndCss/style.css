@@ -41,7 +41,7 @@ nav a:hover{
 main{
 }
 
-p, label, .enviar, .produtos h2, thead, .titulo-principal, .principal p, fieldset{
+p, label, .enviar, .produtos h2, thead, .titulo-principal, .principal p, fieldset, td{
   color: white;
 }
 
@@ -92,6 +92,7 @@ label{
   border-radius: 5px;
   transition: 1s all;
   cursor: pointer;
+  display: block;
   margin: auto;
 }
 
