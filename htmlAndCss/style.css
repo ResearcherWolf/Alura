@@ -41,7 +41,7 @@ nav a:hover{
 main{
 }
 
-p{
+p, label, .enviar, .produtos h2, thead, .titulo-principal, .principal p, fieldset{
   color: white;
 }
 
@@ -59,18 +59,23 @@ form label, form legend{
   margin: 0 0 10px;
 }
 
+input, select{
+  background: #000000;
+  color: white;
+}
+
 .input-padrao{
   display: block;
   margin: 0 0 20px;
   padding: 10px 25px;
   width: 50%;
+  background: #000000;
 }
 
 .enviar{
   width:40%;
   padding: 15px 0;
   background: orange;
-  color: white;
   font-weight: bold;
   font-size: 18px;
   border: none;
@@ -122,7 +127,6 @@ form label, form legend{
 .produtos h2{
   font-size: 30px;
   font-weight: bold;
-  color: white;
 }
 
 .produto-descricao{
@@ -141,7 +145,6 @@ table{
 
 thead{
   background: #555555;
-  color: white;
   font-weight: bold;
 }
 
@@ -178,14 +181,12 @@ footer{
   text-align: center;
   font-size: 2em;
   margin: 0 0 1em;
-  color: white;
   clear: left;
 }
 
 
 .principal p{
   margin: 0 0 1em;
-  color: white;
 }
 
 .principal strong{

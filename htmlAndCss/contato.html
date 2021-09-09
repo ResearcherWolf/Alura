@@ -25,19 +25,17 @@
     <main>
       <section class="formularios">
         <form>
-          <label for="nomesobrenome" style="input-padrao">Nome e sobrenome</label>
+          <label for="nomesobrenome" class="input-padrao">Nome e sobrenome</label>
           <input type="text" id="nomesobrenome" required>
 
-          <label for="email" style="input-padrao">Email</label>
+          <label for="email" class="input-padrao">Email</label>
           <input type="email" id="email" required placeholder="nome@dominio.com">
 
-          <label for="telefone" style="input-padrao">Telefone</label>
+          <label for="telefone" class="input-padrao">Telefone</label>
           <input type="tel" id="telefone" required placeholder="(XX) XXXXX-XXXX">
 
           <label for="mensagem">Mensagem</label>
           <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
-
-          <input type="submit" value="Enviar formulário" class="enviar">
 
           <fieldset>
             <legend>Como prefere o nosso contato?</legend>
@@ -68,6 +66,8 @@
             <input type="checkbox" checked>
             Gostaria de receber nossas novidades por email?
           </label>
+
+          <input type="submit" value="Enviar formulário" class="enviar">
         </form>
         <table>
           <thead>
