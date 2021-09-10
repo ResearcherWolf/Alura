@@ -295,7 +295,7 @@ footer{
   nav{
     position: static;
   }
-  .lista-beneficios, .imagem-beneficios, .logo-produtos{
+  .lista-beneficios, .imagem-beneficios, .logo-produto{
     width: 100%
   }
 }
