@@ -280,13 +280,22 @@ footer{
   .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .formularios, .produtos{
     width: auto;
   }
+  .produtos{
+    margin: 0 auto;
+    padding: 10% 0;
+  }
+  .produtos li{
+    padding: 5px 10px;
+    margin: 0 1.2%;
+
+  }
   h1{
     text-align: center;
   }
-  nav {
+  nav{
     position: static;
   }
-  .lista-beneficios, imagem-beneficios {
+  .lista-beneficios, .imagem-beneficios, .logo-produtos{
     width: 100%
   }
 }
